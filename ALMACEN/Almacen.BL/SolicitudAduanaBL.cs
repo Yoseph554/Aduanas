@@ -10,12 +10,15 @@ namespace Almacen.BL
 {
     public class SolicitudAduanaBL
     {
+
         Contexto _contexto;
         public List<SolicitudAduana> ListadeSolicitudes { get; set; }
         public SolicitudAduanaBL()
         {
             _contexto = new Contexto();
             ListadeSolicitudes = new List<SolicitudAduana>();
+
+
 
         }
         public List<SolicitudAduana> ObtenerSolicitudes()
